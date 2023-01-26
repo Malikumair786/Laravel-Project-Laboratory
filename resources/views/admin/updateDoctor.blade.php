@@ -24,17 +24,11 @@
 
 
 
-        {{-- hello lorem500 --}}
-        {{-- {{$doctor->name}}
-        {{$doctor->phone}}
-        {{$doctor->room}}
-        {{$doctor->speciality}} --}}
 
         <div class="text-center" style="padding-top: 30px">
             @if (session()->has('message'))
                 <div class="alert alert-success">
                     {{ session()->get('message') }}
-                    {{-- <button type="button" class="close" data-dismiss="alert">X</button> --}}
                     <button type="button" class="btn-close btn-close-white" aria-label="Close" data-dismiss="alert"></button>
                 </div>
             @endif
@@ -69,15 +63,13 @@
                 </div>
                 <div style="padding: 15px">
                     <label>old Image</label>
-                    {{-- <input type="file" name="file" id="Image" required> --}}
                     <img style="margin-left: 200px" height="150px" width="150px" src="doctorImage/{{ $doctor->image }}"
                         alt="">
                 </div>
                 <div style="padding: 15px">
                     <label for="Image">change Image</label>
                     <input type="file" name="file" id="Image">
-                    {{-- <img height="150px" width="150px" src="doctorImage/{{$doctor->image}}" alt=""> --}}
-                </div>
+                 </div>
                 <div style="padding: 15px">
                     <input type="submit" value="Submit" class="btn btn-primary">
                 </div>

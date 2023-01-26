@@ -13,6 +13,7 @@ class adminController extends Controller
     public function add_doc_view(){
         return view('admin.add_doctor');
     }
+
     public function upload(Request $request){
         $doctor = new doctor;
         $image = $request->file;
@@ -107,4 +108,5 @@ class adminController extends Controller
         return redirect()->back();
     }
 
+    
 }

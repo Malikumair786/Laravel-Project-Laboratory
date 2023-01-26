@@ -16,7 +16,7 @@
 
     <div class="container-fluid page-body-wrapper">
 
-        <div class=" text-center" style="padding-top: 10px">
+        <div class=" text-center" style="padding-top: 50px">
             <table>
                 <tr style="background-color: black">
                     <th style="padding: 10px; font-size: 15px; color:white">Customer Name</th>

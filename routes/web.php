@@ -62,5 +62,5 @@ Route::post('/edit_doctor/{id}', [adminController::class, 'edit_doctor']);
 
 
 
-// Route::get('/search',[SearchController::class, 'search']);
+Route::get('/search',[SearchController::class, 'search']);
 

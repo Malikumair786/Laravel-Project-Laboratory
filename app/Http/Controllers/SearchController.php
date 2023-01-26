@@ -17,9 +17,6 @@ class SearchController extends Controller
 
          $output = "";
          $doctor = DB::table('doctors')->where('name', 'LIKE', '%' . $request->search . "%")->get();
-         // echo "pre";
-         // print_r($products);
-         // die;
          if ($doctor) {
             foreach ($doctor as $key => $doctors) {
                $output .= '<tr>' .
