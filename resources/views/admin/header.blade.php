@@ -12,8 +12,8 @@
             <ul class="navbar-nav w-100">
                 <li class="nav-item w-100">
                     <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
-                        {{-- <input type="text" class="form-control" placeholder="Search products"> --}}
-                        <input style="color: white" type="text" class="form-control" id="search" name="search">
+                        <input type="text" class="form-control" placeholder="Search products">
+                        {{-- <input style="color: white" type="text" class="form-control" id="search" name="search"> --}}
 
                     </form>
                 </li>
@@ -176,7 +176,7 @@
         </div>
 
 
-        <table class="table table-bordered table-hover">
+        {{-- <table class="table table-bordered table-hover">
             <thead>
                 <tr>
                     <th>Doctor Name</th>
@@ -189,9 +189,9 @@
                 <tbody id="tr">
                     <tr id="tr"></tr>
                 </tbody>
-        </table>
+        </table> --}}
     </nav>
-    <script type="text/javascript">
+    {{-- <script type="text/javascript">
         $('#search').on('keyup', function() {
             $value = $(this).val();
             $.ajax({
@@ -206,4 +206,4 @@
                 }
             });
         })
-    </script>
+    </script> --}}
