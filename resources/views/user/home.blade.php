@@ -16,45 +16,23 @@
             {{-- <button type="button" class="close" data-dismiss="alert"></button> --}}
         </div>
     @endif
-    <!-- End top bar -->
 
-    <!-- Start header -->
     @include('user.header')
-    <!-- End header -->
 
-    <!-- Start Banner -->
     @include('user.startBanner')
-    <!-- End Banner -->
 
-    <!-- Start About us -->
     @include('user.about')
-    <!-- End About us -->
 
-
-
-    <!-- Start Appointment -->
     @include('user.appointment')
-    <!-- End Appointment -->
-
-    <!-- Start Gallery -->
-    @include('user.gallery');
-    <!-- End Gallery -->
-
-    <!-- Start Team -->
-    @include('user.team');
-
-    <!-- End Team -->
 
 
+    @include('user.gallery')
 
-    <!-- Start Contact -->
+    @include('user.team')
+
     @include('user.services');
-    <!-- End Contact -->
 
-
-    <!-- Start Footer -->
     @include('user.footer');
-    <!-- End Footer -->
 
     @include('user.js');
 </body>
