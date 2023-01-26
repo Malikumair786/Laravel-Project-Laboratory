@@ -9,7 +9,7 @@ class SearchController extends Controller
 {
    public function browse()
    {
-      return view('afterSearch');
+      return view('our_doctors');
    }
    public function search(Request $request)
    {
@@ -18,7 +18,7 @@ class SearchController extends Controller
          $output = "";
          $doctor = DB::table('doctors')->where('name', 'LIKE', '%' . $request->search . "%")->get();
          if ($doctor) {
-            foreach ($doctor as $key => $doctors) {
+            foreach ($doctor as $doctors) {
                $output .= '<tr>' .
                   '<td>' . $doctors->name . '</td>' .
                   '<td>' . $doctors->phone . '</td>' .
