@@ -7,10 +7,6 @@ use Illuminate\Http\Request;
 
 class SearchController extends Controller
 {
-   public function browse()
-   {
-      return view('our_doctors');
-   }
    public function search(Request $request)
    {
       if ($request->ajax()) {

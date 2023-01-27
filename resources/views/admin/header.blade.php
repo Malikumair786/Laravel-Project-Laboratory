@@ -185,7 +185,6 @@
                     <th>Room</th>
                 </tr>
             </thead>
-            <tbody onclick="{{ url('browse') }}">
             <tbody id="tr">
                 <tr id="tr"></tr>
             </tbody>
